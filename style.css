@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    font-family: montserrat;
+    background-color: papayawhip;
+  }
+  nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: green;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: green;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  button{
+    border:none;
+    border-radius: 3px;
+    padding: 8px;
+    background-color: green;
+    color:white;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (min-width: 769px) and (max-width: 1279px){
+    nav{
+        background-color: green;
+    }
+    
+    label.logo{
+        color:white;
+    }
+
+    button{
+        background-color: white;
+        color:green;
+    }
+
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: fit-content;
+      background: green;
+      top: 80px;
+      left: 0;
+      text-align: center;
+    }
+    nav ul li{
+      display: inline-block;
+      margin: 10px 0;
+      line-height: 10px;
+    }
+    nav ul li a{
+      color: white;  
+      font-size: 15px;
+      height: 30px;
+      margin-right: 34px;
+    }
+    
+  }
+  @media (max-width: 768px){
+    nav{
+        background-color: green;
+    }
+    
+    label.logo{
+        color:white;
+    }
+
+    button{
+        background-color: white;
+        color:green;
+    }
+
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: fit-content;
+      background: green;
+      top: 80px;
+      left: 0;
+      text-align: center;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      color: white;  
+      font-size: 20px;
+      height: 30px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+}
